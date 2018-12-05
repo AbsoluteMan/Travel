@@ -40,7 +40,7 @@
 		},
 		methods: {
 			getHomeInfo () {
-				axios.get('api/Travel/index?city=' + this.city).then(this.getHomeInfoSucc)
+				axios.get('/Travel/TravelApi/index?city=' + this.city).then(this.getHomeInfoSucc)
 			},
 			getHomeInfoSucc (res) {
 				res = res.data

@@ -34,7 +34,7 @@
 		},
 		methods: {
 			getCityInfo () {
-				axios.get('/api/Travel/city').then(this.handleGetCityInfoSucc)
+				axios.get('/Travel/TravelApi/city').then(this.handleGetCityInfoSucc)
 			},
 			handleGetCityInfoSucc (res) {
 				res = res.data

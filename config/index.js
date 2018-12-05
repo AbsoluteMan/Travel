@@ -11,11 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-    	'/api': {
+    	'/Travel/TravelApi': {
     		target: 'http://localhost:80',
     		changeOrigin: true,
     		pathRewrite: {
-    			'^/api': 'http://localhost:80'
+    			'^/Travel/TravelApi': '/TravelApi'
     		}
     	}
     },
@@ -51,7 +51,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/Travel/',
 
     /**
      * Source Maps

@@ -34,7 +34,7 @@
 		},
 		methods: {
 			getDetailInfo () {
-				axios.get('/api/Travel/detail', {
+				axios.get('/Travel/TravelApi/detail', {
 					params: {
 						id: this.$route.params.id
 					}
